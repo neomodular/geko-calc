@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { saveReportAction } from "../actions/reportActions";
 import InputRow from "../components/inputRow";
 
+import constants from "../../constans";
+
 const Calculator = ({ props }) => {
   const [screen, setScreen] = useState("0");
   const [firstValue, setfirstValue] = useState(0);
@@ -14,8 +16,6 @@ const Calculator = ({ props }) => {
   const dispatch = useDispatch();
   const reports = useSelector((state) => state.reports);
   const saveLog = (log) => dispatch(saveReportAction(log));
-
-  import constants from "../../constans";
 
   const buttons = [
     ["C", "clear", "%", "/"],

@@ -3,5 +3,5 @@ export default constans = {
   WHITE_BACKGROUND: "#FFFFFF",
   GREEN_COLOR: "#009821",
   GREY_COLOR: "#F4F4F4",
-  THEME_COLOR = "#0072B1"
+  THEME_COLOR: "#0072B1",
 };
