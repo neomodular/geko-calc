@@ -15,6 +15,8 @@ const Calculator = ({ props }) => {
   const reports = useSelector((state) => state.reports);
   const saveLog = (log) => dispatch(saveReportAction(log));
 
+  import constants from "../../constans";
+
   const buttons = [
     ["C", "clear", "%", "/"],
     ["7", "8", "9", "X"],
@@ -128,7 +130,7 @@ const { height } = Dimensions.get("screen");
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F4F4F4",
+    backgroundColor: constants.GREY_COLOR,
   },
   header: {
     flex: 0.3,
@@ -138,16 +140,16 @@ const styles = StyleSheet.create({
   },
   footer: {
     flex: 1,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: constants.WHITE_BACKGROUND,
     zIndex: 2,
   },
   dataInputRound: {
-    color: "#009821",
+    color: constants.GREEN_COLOR,
     fontWeight: "bold",
     fontSize: 17,
   },
   dataInput: {
-    color: "#FFFFFF",
+    color: constants.WHITE_BACKGROUND,
     fontWeight: "bold",
     fontSize: 40,
   },

@@ -4,7 +4,7 @@ import Navigation from "./src/navigations/navigator";
 import store from "./store";
 import { SafeAreaView, StyleSheet } from "react-native";
 
-const THEME_COLOR = "#0072B1";
+import constants from "./constans";
 
 export default function App() {
   return (
@@ -18,6 +18,6 @@ export default function App() {
 const styles = StyleSheet.create({
   topSafeArea: {
     flex: 0,
-    backgroundColor: THEME_COLOR,
+    backgroundColor: constants.THEME_COLOR,
   },
 });
